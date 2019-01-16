@@ -726,7 +726,7 @@ Add the following to ``Turret.gd``:
             ammo_in_turret -= 1
         
         else:
-            node_raycast.look_at(current_target.global_transform.origin + PLAYER_HEIGHT, Vector3(0,1,0))
+            node_raycast.look_at(current_target.global_transform.origin + Vector3(0, PLAYER_HEIGHT, 0), Vector3(0,1,0))
             
             node_raycast.force_raycast_update()
             
